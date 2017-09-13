@@ -7,6 +7,10 @@
  {
    "repository": "proprietary_vendor_xiaomi",
    "target_path": "vendor/xiaomi"
+ },
+ {
+   "repository": "android_packages_apps_FlipFlap",
+   "target_path": "packages/apps/FlipFlap"
  }
 ]
 
