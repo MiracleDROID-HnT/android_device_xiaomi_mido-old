@@ -27,7 +27,7 @@ PRODUCT_ENFORCE_RRO_TARGETS := \
     Settings \
     SettingsProvider \
     SystemUI \
-    framework-res \
+    framework-res
 
 # Screen density
 PRODUCT_AAPT_CONFIG := normal
