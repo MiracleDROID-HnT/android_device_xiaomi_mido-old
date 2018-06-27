@@ -32,6 +32,7 @@ namespace implementation {
 
 struct Light : public ILight {
     Light(std::pair<std::ofstream, uint32_t>&& lcd_backlight, std::ofstream&& button_backlight,
+          uint32_t old_led_driver,
           std::ofstream&& red_led, std::ofstream&& green_led, std::ofstream&& blue_led,
           std::ofstream&& red_blink, std::ofstream&& green_blink, std::ofstream&& blue_blink,
           std::ofstream&& red_breath, std::ofstream&& green_breath, std::ofstream&& blue_breath);
@@ -51,6 +52,7 @@ struct Light : public ILight {
 
     std::pair<std::ofstream, uint32_t> mLcdBacklight;
     std::ofstream mButtonBacklight;
+    uint32_t mOldLedDriver;
     std::ofstream mRedLed;
     std::ofstream mGreenLed;
     std::ofstream mBlueLed;
